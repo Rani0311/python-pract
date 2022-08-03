@@ -3,7 +3,8 @@ class Triangle:
      self.side=a
      self.side2=b
      self.side3=c
-     return(self.a*self.b* self.c)
+     return(self.side*self.side2* self.side3)
+     print("perimeter of triangle:",perimter1.perimtr())
 
      perimter1=Triangle()
       
