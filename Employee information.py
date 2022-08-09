@@ -6,20 +6,24 @@ class Employee:
         self.name=n
         self.year=y
         self.address=a
-    def disp(self):
-        print( n,y,a)
+    #def disp(self):
+    #    print( n,y,a)
        
-lst=[]
-n=str(input("Enter name"))
-list=n.split()
-y=int(input("Enter year"))
+n=[]
+n=[str(item)for item in input("Enter name:").split()]
+print("")
+y=[]
+y=[int(item)for item in input("Enter year:").split()]
+print("")
 
-a=str(input("Enter adress"))
-list=a.split()
+a=[]
+a=[str(item)for item in input("Enter address:").split()]
+
+
 
 
 info=Employee(n,y,a)
-info.disp
+#info.disp
 print("Employee info")
 
-print("name",'year','address\n',n,y,a)
+print("name",'year','address\n',n,"\n",y,"\n",a)
