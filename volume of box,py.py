@@ -6,10 +6,10 @@ class Volume:
         self.breadth=b
     def vol(self):
         return (self.height*self.length*self.breadth)      
-
+lit=[]
 h=int(input("Enter height:"))
-l=int(input("Enter height:"))
-b=int(input("Enter height:"))
+l=list(input("Enter height:"))
+b=list(input("Enter height:"))
 
 
 v=Volume(h,l,b)
