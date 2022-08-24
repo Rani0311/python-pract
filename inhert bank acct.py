@@ -17,7 +17,7 @@ class Account:
         else:
             print('low balance')
         print('add withdrow and upadate balance is:',self.balance)
-
+    
         
 
     
@@ -40,11 +40,18 @@ acct1.depo()
 
 class Sav_acct(Account):
      print('you do not use check book')
+     def inte(self):
+        tim=int(input('Enter time'))
+        r=2
+        interest=tim*r*self.balance/100
+        print("your interst is",interest)
+
 
 acct=Sav_acct()
 acct.info()
 acct.bal()
 acct.withd()
 #acct.display()
+acct.inte()
     
 
